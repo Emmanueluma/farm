@@ -9,7 +9,7 @@ import { getAuth ,GoogleAuthProvider } from "firebase/auth";
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
   apiKey: "AIzaSyBxv7vKccc6x2p8QofLVuYhm9Qe5dym3v8",
-  authDomain: "farm-authenication.firebaseapp.com",
+  authDomain: "mailiyafafarm.pages.dev",
   projectId: "farm-authenication",
   storageBucket: "farm-authenication.appspot.com",
   messagingSenderId: "415449646020",

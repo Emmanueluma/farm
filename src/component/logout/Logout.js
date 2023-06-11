@@ -1,13 +1,16 @@
 import './logout.css'
-import {BiSearch, BiTime} from "react-icons/bi"
+import {GoSignOut} from "react-icons/go"
+import {GiCancel} from "react-icons/gi"
 import {signOut} from "firebase/auth"
 import { auth } from '../../firebase-config/config';
-
-
+import {useNavigate} from 'react-router-dom'
 
 const Logout = ({setToggle}) => {
+  const nav = useNavigate();
   const handleSigOut = async () => {
-    await signOut(auth)
+      await signOut(auth)
+      nav("/");
+
   }
   const handleCan = () => {
     setToggle(prev => !prev)
@@ -15,8 +18,8 @@ const Logout = ({setToggle}) => {
   return (
     <section className="logout">
       <div>
-      <button onClick={handleSigOut} ><BiSearch /> sign out</button>
-      <BiTime onClick={handleCan} className='logout' />
+      <button onClick={handleSigOut} ><GoSignOut /> sign out</button>
+      <GiCancel onClick={handleCan} className='logout' />
       </div>
     </section>
   )

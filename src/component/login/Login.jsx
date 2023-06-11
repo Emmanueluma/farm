@@ -44,12 +44,12 @@ const Login = () => {
             try{
                 await signInWithEmailAndPassword(auth, formData.email, formData.password);
                 setVaLSpin(prev => !prev);
-            }catch(err){
-                setLSame(`${err}`);
-                setVaLSpin(prev => !prev);
                 if(auth.currentUser){
                     navigator('/home');
                 }
+            }catch(err){
+                setLSame(`${err}`);
+                setVaLSpin(prev => !prev);
             }
         }else if (formData.email == "" && formData.password == ""){
             setVaLSpin(prev => !prev);
