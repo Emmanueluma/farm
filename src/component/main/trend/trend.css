@@ -1,0 +1,78 @@
+section.trends .header{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    height: 51px;
+    background-color: var(--trend-header);
+    display: flex;
+    padding: 0 1rem;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+section.trends .header div h1{
+    font-size: 22px;
+    color: #fff;
+}
+section.trends .header div p{
+    color: var(--green);
+    font-size: 15px;
+    text-decoration: underline;
+}
+section.trends .trend--item{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+section.trends .trend--item article {
+    position: relative;
+    width: 90%;
+    height: 274px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+section.trends .trend--item article:last-child{
+    margin-bottom: 80px;
+}
+section.trends .trend--item article .rent-sell {
+    padding: 0;
+    position: absolute;
+    top: 11px;
+    left: 7px;
+    width: 80px;
+    height: 20px;
+    background-color: #fff;
+    color: var(--green);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.trends .trend--item article img {
+    width: 100%;
+    height: 204px;
+    /* object-fit: cover; */
+}
+section.trends .trend--item article .n-p{
+    padding: 0 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: .5rem;
+}
+section.trends .trend--item article p{
+    display: block;
+    padding-left: 1.5rem;
+    font-size: 12px;
+    color: var(--green);
+}
+section.trends .trend--item article .n-p .price {
+    color: var(--green);
+    text-transform: lowercase;
+}
