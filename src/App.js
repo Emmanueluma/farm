@@ -18,8 +18,8 @@ import Details from './component/main/Detail/Details';
 function App() {
   return (
     <Routes>
-      <Route path='/' element={<Register />}/>
-      <Route path='/login' element={<Loginto />}/>
+      <Route path='/' element={<Loginto />}/>
+      <Route path='/register' element={<Register />}/>
       <Route path='/home' element={<Home />}>
         <Route index element={<Trend />}/>
         <Route path='trend' element={<Trend />}/>

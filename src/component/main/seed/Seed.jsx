@@ -47,9 +47,9 @@ const Seed = ({data}) => {
     return (
       <>
           {toggleLogOut && <Logout setToggle={setToggleLogOut}/>}
-          <section onClick={handleTcan} className="user--picuture background">
+          <section  className="user--picuture background">
               <div className="user-container">
-                <img src={trend1} alt="profile picture" />
+                <img onClick={handleTcan} src={trend1} alt="profile picture" />
               </div>
               <div className="text">
                 <h1>food and seed</h1>

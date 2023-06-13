@@ -82,19 +82,6 @@ const Register = () => {
         }
     }
 
-    const handleSubmitGoogle = async () => {
-        setSpin(prev => !prev)
-        try{
-           await signInWithPopup(auth, googleProvider)
-           if(auth.currentUser){
-            navigator('/home')
-        }
-        }catch (err){
-            setSpin(prev => !prev);
-            setFailedGoogle(`${err}`);
-        }
-
-    }
 
     return ( 
         <>
@@ -124,12 +111,11 @@ const Register = () => {
                         </div>
                     </div>
                     
+                    <div className="button">
+                        <button type="submit" className="btn" onClick={handleSubmit}>sign up</button>
+                        <p>already have an account <Link to="/login" className="pa"> login now</Link></p>
+                    </div>
                 </form>
-                <div className="button">
-                    <button type="submit" className="btn" onClick={handleSubmit}>sign up</button>
-                    <button className="btn" onClick={handleSubmitGoogle}>google</button>
-                    <p>already have an account <Link to="/login" className="pa"> login now</Link></p>
-                </div>
             </section>
         </>
     );

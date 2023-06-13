@@ -63,7 +63,7 @@ section.login form div.input div .same{
     color: rgb(126, 21, 21);
     background-color: #000;
 }
-section.login div.button{
+section.login form .button{
     width: 100%;
     min-height: 20%;
     max-height: auto;
@@ -72,7 +72,7 @@ section.login div.button{
     align-items: center;
     flex-direction: column;
 }
-section.login div.button .btn{
+section.login form .button .btn{
     width: 80%;
     height: 55px;
     border-radius: 10px;
@@ -86,13 +86,13 @@ section.login div.button .btn{
     border: none;
     font-weight: 600;
 }
-section.login div.button .btn:first-child{
+section.login form .button .btn:first-child{
     margin-bottom: 1rem;
 }
-section.login div.button p{
+section.login form .button p{
     font-size: .9rem;
 }
-section.login div.button p .pa{
+section.login form .button p .pa{
     text-transform: uppercase;
     color:#FFD600;
 }

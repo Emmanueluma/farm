@@ -45,9 +45,9 @@ const Animal = ({data}) => {
   return (
     <>
       {toggleLogOut && <Logout setToggle={setToggleLogOut}/>}
-      <section onClick={handleTcan} className="user--picuture">
+      <section  className="user--picuture">
         <div className="user-container">
-          <img src={trend1} alt="profile picture" />
+          <img onClick={handleTcan} src={trend1} alt="profile picture" />
         </div>
         <div className="text">
           <h1>animals</h1>
