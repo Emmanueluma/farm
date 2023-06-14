@@ -29,8 +29,8 @@ const data =[
     },
     {
         id:4,
-        image: Pig,
-        name: "pig",
+        image: Trend4,
+        name: "goat",
         price: "200",
         rate: 4.5,
         year: "nine years old"
@@ -45,8 +45,8 @@ const data =[
     },
     {
         id:6,
-        image: Pig,
-        name: "pig",
+        image: Trend3,
+        name: "cow",
         price: "200",
         rate: 4.5,
         year: "nine years old"
