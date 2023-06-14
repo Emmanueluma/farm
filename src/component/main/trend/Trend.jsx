@@ -38,7 +38,7 @@ const Trend = () => {
             year: "127B Loving Acres Road Khanas City, MO 64110"
         },
         {
-            id:5,
+            id:4,
             image: Trend5,
             name: "camel",
             price: "200",
@@ -46,9 +46,9 @@ const Trend = () => {
             year: "127B Loving Acres Road Khanas City, MO 64110"
         },
         {
-            id:6,
-            image: Pig,
-            name: "pig",
+            id:5,
+            image: Trend5,
+            name: "camel",
             price: "200",
             rate: 4.5,
             year: "127B Loving Acres Road Khanas City, MO 64110"
